@@ -69,7 +69,7 @@ import:
   - cmd/goimports
   - go/ast/astutil
 - package: github.com/pingcap/tipb
-  version: 1043caee48da56ffc3521406a041db8e5feac9a8
+  version: 5e46e0ec647edfee8fe001c5b51609460fb655bf
   subpackages:
   - sharedbytes
 - package: google.golang.org/grpc
