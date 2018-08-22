@@ -1,5 +1,5 @@
-hash: 59555dc62b5af00d71ef4f1f4f990d17ccad5b6d10dc89f4b2be14065247a065
-updated: 2017-04-26T11:12:14.754942661+08:00
+hash: a1142b90afd9d5eb4aa3c1dd5c879cb9fba17c3331e0fbba4cc725efc1bb1a2c
+updated: 2018-08-22T16:28:58.732827721+08:00
 imports:
 - name: github.com/gogo/protobuf
   version: 06ec6c31ff1bac6ed4e205a547a3d72934813ef3
@@ -59,24 +59,37 @@ imports:
   version: 8ee79997227bf9b34611aee7946ae64735e6fd93
   subpackages:
   - proto
+  - ptypes
+  - ptypes/any
+  - ptypes/duration
+  - ptypes/timestamp
 - name: github.com/juju/errors
   version: 6f54ff6318409d31ff16261533ce2c8381a4fd5d
 - name: github.com/pingcap/tipb
-  version: 1043caee48da56ffc3521406a041db8e5feac9a8
+  version: 5e46e0ec647edfee8fe001c5b51609460fb655bf
   subpackages:
   - sharedbytes
 - name: golang.org/x/net
-  version: 6acef71eb69611914f7a30939ea9f6e194c78172
+  version: 922f4815f713f213882e8ef45e0d315b164d705c
   subpackages:
   - context
+  - http/httpguts
   - http2
   - http2/hpack
+  - idna
   - internal/timeseries
   - trace
+- name: golang.org/x/sys
+  version: 3b58ed4ad3395d483fc92d5d14123ce2c3581fec
+  subpackages:
+  - unix
 - name: golang.org/x/text
-  version: 723492b65e225eafcba054e76ba18bb9c5ac1ea2
+  version: 6e3c4e7365ddcc329f090f96e4348398f6310088
   subpackages:
   - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
 - name: golang.org/x/tools
   version: dd796641777bce15ee87fb6bea64943b648bdcf3
   repo: https://github.com/golang/tools.git
@@ -85,20 +98,38 @@ imports:
   - cmd/goimports
   - go/ast/astutil
   - imports
-- name: google.golang.org/grpc
-  version: 8050b9cbc271307e5a716a9d782803d09b0d6f2d
+- name: google.golang.org/genproto
+  version: c66870c02cf823ceb633bcd05be3c7cda29976f4
   subpackages:
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: 32fb0ac620c32ba40a4626ddf94d90d12cce3455
+  subpackages:
+  - balancer
+  - balancer/base
+  - balancer/roundrobin
   - codes
+  - connectivity
   - credentials
+  - encoding
+  - encoding/proto
   - grpclog
   - internal
+  - internal/backoff
+  - internal/channelz
+  - internal/envconfig
+  - internal/grpcrand
+  - internal/transport
   - keepalive
   - metadata
   - naming
   - peer
+  - resolver
+  - resolver/dns
+  - resolver/passthrough
   - stats
+  - status
   - tap
-  - transport
 testImports:
 - name: github.com/pingcap/check
-  version: ""
+  version: 1c287c953996ab3a0bf535dba9d53d809d3dc0b6
